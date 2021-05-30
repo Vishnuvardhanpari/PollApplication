@@ -1,0 +1,26 @@
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="span6">
+  <h5>Poll results</h5>
+  <strong>Miguel de Cervantes</strong><span class="pull-right">{{Miguel}}</span>
+  <div [ngClass]="setClass(1)">
+      <div *ngIf="ready" class="bar" [ngStyle]="setStyles(1)"></div>
+  </div>
+  <strong>Charles Dickens</strong><span class="pull-right">{{Charles}}</span>
+  <div [ngClass]="setClass(2)">
+      <div *ngIf="ready" class="bar" [ngStyle]="setStyles(2)"></div>
+  </div>
+  <strong>J.R.R. Tolkien</strong><span class="pull-right">{{Tolkien}}</span>
+  <div [ngClass]="setClass(3)">
+      <div *ngIf="ready" class="bar" [ngStyle]="setStyles(3)"></div>
+  </div>
+  <strong>Antoine de Saint-Exuper</strong><span class="pull-right">{{Antoine}}</span>
+  <div [ngClass]="setClass(4)">
+      <div *ngIf="ready" class="bar" [ngStyle]="setStyles(4)"></div>
+  </div>
+  
+  
+</div>

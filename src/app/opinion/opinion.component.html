@@ -1,0 +1,35 @@
+<div class="col-md-4">
+  <h2 style="font-family: Arial, Helvetica, sans-serif;">Opinion Poll</h2>
+  <h5>Who is your favourite author</h5>
+
+<ul class="list-group">
+    <div class="radio hov">
+        <li class="list-group-item">
+        <label><input type="radio" name="opinionbt" value="1" [(ngModel)]="opinionbt">
+        Miguel de Cervantes</label>
+        </li>
+    </div>
+    <div class="radio hov">
+        <li class="list-group-item">
+        <label><input type="radio" name="opinionbt" value="2" [(ngModel)]="opinionbt">
+        Charles Dickens</label>
+        </li>
+    </div>
+    <div class="radio hov">
+        <li class="list-group-item">
+        <label> <input type="radio" name="opinionbt" value="3" [(ngModel)]="opinionbt">
+        J.R.R. Tolkien</label>
+        </li>
+    </div>
+    <div class="radio hov">
+        <li class="list-group-item">
+        <label><input type="radio" name="opinionbt" value="4" [(ngModel)]="opinionbt">
+        Antoine de Saint-Exuper</label>
+        </li>
+    </div>
+</ul>
+    <div>
+        <button  class="btn btn-success" (click)="voteNow()" [disabled]='opinionbt===""' >Vote!</button>
+    </div>
+
+</div>
